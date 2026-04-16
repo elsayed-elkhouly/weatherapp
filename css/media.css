@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+:root {
+    --main-color: #1e202b;
+    --second-color: #009ad8;
+    --theird-color: #323544;
+
+}
+
+
+
+@media (min-width: 992px) {
+
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        justify-content: end;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-item {
+        padding: 25px;
+        border-bottom: 0 transparent;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link.active {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+        border-radius: 30px;
+        padding: 2px 25px;
+        border: 2px solid var(--second-color);
+        margin-top: 5px;
+        font-weight: 400;
+
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+        padding: 5px 25px;
+
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-item:hover .nav-link {
+        color: var(--second-color);
+        border-radius: 30px;
+        border: 2px solid var(--second-color);
+    }
+
+
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+}
+
+/* style form */
+
+
+
+
+.hero {
+    height: 50vh;
+    background-image: url(../image/banner.png);
+    background-size: cover;
+
+}
+
+.input-sr .inputsr {
+    background-color: var(--main-color);
+    color: white;
+    box-shadow: none;
+    outline: none;
+    border: var(--main-color)
+}
+
+.input-sr .inputsr:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.card {
+    background-color: var(--theird-color);
+}
+
+.card-body .card-title {
+    color: rgb(191, 193, 200);
+}
+
+.card-degree {
+    font-size: 70px;
+    font-weight: 700;
+    position: relative;
+    overflow: auto;
+    color: white;
+}
+
+.card-degree span {
+    padding-bottom: 10px;
+    color: #009ad8;
+    position: absolute;
+    top: -10px;
+    font-size: 45px;
+    right: 60%;
+
+}
+
+.custom {
+    color: var(--second-color);
+}
+
+.card-degree2 {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    overflow: auto;
+    color: white;
+}
+
+.card-degree2 span {
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+/* style footer  */
+.about {
+    background-color: var(--theird-color);
+    margin-top: 200px;
+}
+
+.btn-1 {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    background-color: var(--second-color);
+    color: white;
+    padding: 10px 25px;
+}

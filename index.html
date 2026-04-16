@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>weather APP</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg py-4">
+                <div class="container-md">
+                    <div class="inner d-flex align-items-center ms-2">
+                        <a class="navbar-brand logo-link" href="#" id="sse">
+                            <img src="./image/logo@2x.png" class="img-fluid logo-img" alt="logo">
+                        </a>
+
+                        <div class="a-text mt-1 ms-2">
+                            <h1 class="text-white mb-0 h6">Weather</h1>
+                            <p class="mb-0">tagline goes here</p>
+                        </div>
+                    </div>
+
+                    <button class="navbar-toggler py-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse mt-3 p-3 p-lg-0" id="navbarNavDropdown">
+                        <ul class="navbar-nav text-center ms-auto">
+                            <li class="nav-item py-2"><a class="nav-link active" href="#">Home</a></li>
+                            <li class="nav-item py-2"><a class="nav-link" href="#">News</a></li>
+                            <li class="nav-item py-2"><a class="nav-link" href="#">Line cameras</a></li>
+                            <li class="nav-item py-2"><a class="nav-link" href="#">Photo</a></li>
+                            <li class="nav-item py-2"><a class="nav-link" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div class="hero">
+                <div class="container">
+                    <div class="input-sr py-5">
+                        <input type="text" id="inputsearch"
+                            class="form-control rounded-pill p-3 inputsr shadow-sm"
+                            placeholder="find your location...">
+                    </div>
+
+                    <div class="weather-cards">
+                        <div class="row g-4" id="cards">
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card weather-card first-card h-100 animate-card">
+                                    <div class="card-header d-flex justify-content-between pt-2 text-white">
+                                        <p class="mb-0">Friday</p>
+                                        <p class="mb-0">Friday</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">London</h5>
+
+                                        <div class="card-degree">
+                                            <p>7° 5</p>
+                                        </div>
+
+                                        <div class="card-icon">
+                                            <img src="./image/113.webp" alt="sunny">
+                                        </div>
+
+                                        <p class="custom">Sunny</p>
+
+                                        <div class="card-icons-2 text-secondary d-flex gap-3 flex-wrap">
+                                            <span>
+                                                <i class="fa-solid fa-umbrella fa-rotate-by"
+                                                    style="--fa-rotate-angle: 70deg;"></i> 20%
+                                            </span>
+                                            <span><i class="fa-solid fa-wind"></i> 18km/h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card text-center weather-card h-100 animate-card">
+                                    <div class="card-header py-3 text-white">Sunday</div>
+                                    <div class="card-body py-5 d-flex justify-content-center align-items-center flex-column">
+                                        <img src="./image/113.webp" alt="sunny">
+                                        <div class="card-degree2">
+                                            <p>27° C</p>
+                                            <span>23°</span>
+                                        </div>
+                                        <p class="custom pb-2">Sunny</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+                                <div class="card text-center weather-card h-100 animate-card">
+                                    <div class="card-header py-3 text-white">Sunday</div>
+                                    <div class="card-body py-5 d-flex justify-content-center align-items-center flex-column">
+                                        <img src="./image/113.webp" alt="sunny">
+                                        <div class="card-degree2">
+                                            <p>27° C</p>
+                                            <span>23°</span>
+                                        </div>
+                                        <p class="custom pb-2">Sunny</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
